@@ -1,9 +1,4 @@
-class Node:
-    def __init__(self, name, birth):
-        self.name = name
-        self.birth = birth
-        self.father = None
-        self.mother = None
+from node import Node
 
 
 def build_tree(name, people):
@@ -82,4 +77,12 @@ def sort_by_birth(members):
             if result[j].birth < result[smallest].birth:
                 smallest = j
         result[i], result[smallest] = result[smallest], result[i]
+    return result
+
+
+def all_people(people):
+    result = []
+    for name in people:
+        person = people[name]
+        result.append(Node(person["name"], person["birth"]))
     return result
