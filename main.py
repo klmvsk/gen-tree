@@ -1,5 +1,5 @@
 from loader import load_people
-from tree import build_tree, preorder, postorder, inorder, find_ancestors, dfs_with_stack, sort_by_birth
+from tree import build_tree, preorder, postorder, inorder, find_ancestors, dfs_with_stack, sort_by_birth, all_people
 
 ROOT_NAME = "Анна"
 
@@ -52,9 +52,7 @@ def main():
             name = input("Имя человека: ")
             show_list('Предки человека "' + name + '"', find_ancestors(root, name))
         elif choice == "5":
-            members = []
-            preorder(root, members)
-            members = sort_by_birth(members)
+            members = sort_by_birth(all_people(people))
             show_list("Члены семьи по дате рождения", members)
         elif choice == "6":
             show_list("Обход в глубину через стек", dfs_with_stack(root))
