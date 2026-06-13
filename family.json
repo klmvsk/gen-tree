@@ -1,11 +1,14 @@
 [
-  {"name": "Анна", "father": "Дмитрий", "mother": "Елена", "birth": "2000-03-15"},
-  {"name": "Дмитрий", "father": "Сергей", "mother": "Ольга", "birth": "1975-07-20"},
-  {"name": "Елена", "father": "Павел", "mother": "Нина", "birth": "1978-11-02"},
-  {"name": "Сергей", "father": "Иван", "mother": "Мария", "birth": "1950-01-10"},
-  {"name": "Ольга", "father": "", "mother": "", "birth": "1952-05-30"},
-  {"name": "Павел", "father": "", "mother": "", "birth": "1948-09-12"},
-  {"name": "Нина", "father": "", "mother": "", "birth": "1951-12-25"},
-  {"name": "Иван", "father": "", "mother": "", "birth": "1925-02-14"},
-  {"name": "Мария", "father": "", "mother": "", "birth": "1928-08-08"}
+  {"name": "Анна", "father": "Дмитрий", "mother": "Елена", "spouse": "Игорь", "birth": "2000-03-15"},
+  {"name": "Игорь", "father": "Олег", "mother": "Татьяна", "spouse": "Анна", "birth": "1998-06-04"},
+  {"name": "Олег", "father": "", "mother": "", "spouse": "Татьяна", "birth": "1968-02-19"},
+  {"name": "Татьяна", "father": "", "mother": "", "spouse": "Олег", "birth": "1970-10-08"},
+  {"name": "Дмитрий", "father": "Сергей", "mother": "Ольга", "spouse": "Елена", "birth": "1975-07-20"},
+  {"name": "Елена", "father": "Павел", "mother": "Нина", "spouse": "Дмитрий", "birth": "1978-11-02"},
+  {"name": "Сергей", "father": "Иван", "mother": "Мария", "spouse": "Ольга", "birth": "1950-01-10"},
+  {"name": "Ольга", "father": "", "mother": "", "spouse": "Сергей", "birth": "1952-05-30"},
+  {"name": "Павел", "father": "", "mother": "", "spouse": "Нина", "birth": "1948-09-12"},
+  {"name": "Нина", "father": "", "mother": "", "spouse": "Павел", "birth": "1951-12-25"},
+  {"name": "Иван", "father": "", "mother": "", "spouse": "Мария", "birth": "1925-02-14"},
+  {"name": "Мария", "father": "", "mother": "", "spouse": "Иван", "birth": "1928-08-08"}
 ]
