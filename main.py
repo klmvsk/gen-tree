@@ -31,9 +31,9 @@ def main():
     people = load_people("family.json")
     root = build_tree(ROOT_NAME, people)
     show_header()
+    show_menu()
 
     while True:
-        show_menu()
         choice = input("Ваш выбор: ")
 
         if choice == "1":
