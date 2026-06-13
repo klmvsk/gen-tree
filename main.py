@@ -1,19 +1,13 @@
 from loader import load_people
 from tree import build_tree, preorder, postorder, inorder, find_ancestors, dfs_with_stack, sort_by_birth
 
-
 ROOT_NAME = "Анна"
-WIDTH = 44
-
 
 def show_header():
-    print("=" * WIDTH)
-    print("ГЕНЕАЛОГИЧЕСКОЕ ДЕРЕВО".center(WIDTH))
-    print("=" * WIDTH)
+    print("ГЕНЕАЛОГИЧЕСКОЕ ДЕРЕВО")
 
 
 def show_menu():
-    print()
     print("  1. Родословная, прямой обход")
     print("  2. Родословная, обратный обход")
     print("  3. Родословная, симметричный обход")
@@ -21,13 +15,9 @@ def show_menu():
     print("  5. Члены семьи по дате рождения")
     print("  6. Обход в глубину через стек")
     print("  0. Выход")
-    print()
-
 
 def show_list(title, people):
-    print()
-    print(title)
-    print("-" * WIDTH)
+    print(title + ":")
     if len(people) == 0:
         print("  ничего не найдено")
     else:
@@ -35,7 +25,6 @@ def show_list(title, people):
         for person in people:
             print("  " + str(number) + ". " + person.name + ", " + person.birth)
             number = number + 1
-    print("-" * WIDTH)
 
 
 def main():
