@@ -61,7 +61,7 @@ def main():
             members = sort_by_birth(all_people(people))
             show_list("Члены семьи по дате рождения", members)
         elif choice == "6":
-            show_list("Обход в глубину", dfs_with_stack(root))
+            show_list("Обход в глубину через стек", dfs_with_stack(root))
         elif choice == "0":
             print()
             print("Конец работы")
