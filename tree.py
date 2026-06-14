@@ -1,5 +1,5 @@
 class Node:
-    """Один человек в дереве, у него есть отец и мать."""
+    """Один человек в дереве, есть отец и мать."""
 
     def __init__(self, name, birth):
         self.name = name
@@ -42,7 +42,7 @@ def postorder(node, result):
 
 
 def inorder(node, result):
-    """Симметричный обход, отец, человек, мать."""
+    """Симметричный обход, отец -> человек -> мать."""
     if node is None:
         return
     inorder(node.father, result)
@@ -66,7 +66,7 @@ def find_node(node, name):
 def find_ancestors(root, name):
     """
     Находит человека в дереве и собирает всех его предков.
-    Возвращает пустой список, если человека нет в кровном дереве.
+    Возвращает пустой список, если человека нет в дереве.
     """
     person = find_node(root, name)
     if person is None:
@@ -79,7 +79,7 @@ def find_ancestors(root, name):
 
 
 def dfs_with_stack(root):
-    """Обход дерева в глубину через стек, без рекурсии."""
+    """Обход дерева в глубину."""
     result = []
     stack = [root]
     while len(stack) > 0:
@@ -107,7 +107,7 @@ def sort_by_birth(members):
 
 
 def all_people(people):
-    """Собирает всех людей из файла, включая родню по браку."""
+    """Собирает всех людей из файлау."""
     result = []
     for name in people:
         person = people[name]
