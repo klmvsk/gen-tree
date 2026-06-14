@@ -6,12 +6,10 @@ ROOT_NAME = "Анна"
 
 
 def show_header():
-    """Выводит заголовок программы."""
     print("ГЕНЕАЛОГИЧЕСКОЕ ДЕРЕВО")
 
 
 def show_menu():
-    """Выводит пункты меню."""
     print("  1. Родословная, прямой обход")
     print("  2. Родословная, обратный обход")
     print("  3. Родословная, симметричный обход")
@@ -34,7 +32,7 @@ def show_list(title, people):
 
 
 def main():
-    """Главный цикл программы, читает данные и обрабатывает выбор пользователя."""
+    """Главный цикл программы. Читает данные и обрабатывает выбор пользователя."""
     people = load_people("family.json")
     root = build_tree(ROOT_NAME, people)
     show_header()
@@ -59,14 +57,14 @@ def main():
             name = input("Имя человека: ")
             show_list('Предки человека "' + name + '"', find_ancestors(root, name))
         elif choice == "5":
-            # берем всю семью, а не только кровное дерево
+            # берем всю семью
             members = sort_by_birth(all_people(people))
             show_list("Члены семьи по дате рождения", members)
         elif choice == "6":
-            show_list("Обход в глубину через стек", dfs_with_stack(root))
+            show_list("Обход в глубину", dfs_with_stack(root))
         elif choice == "0":
             print()
-            print("До свидания")
+            print("Конец работы")
             break
         else:
             print()
