@@ -107,7 +107,7 @@ def sort_by_birth(members):
 
 
 def all_people(people):
-    """Собирает всех людей из файлау."""
+    """Собирает всех людей из файла."""
     result = []
     for name in people:
         person = people[name]
