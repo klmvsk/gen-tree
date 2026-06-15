@@ -75,3 +75,4 @@
 - Меню и интерфейс программы
 
 ## Видео с разбором
+https://drive.google.com/file/d/1WoJLVTPQ4SdaUfp8u2mkMLMiLsIqD4ik/view?usp=sharing
